@@ -1,0 +1,52 @@
+body{position:relative;}
+#site_header {
+    background: #fbfbfb;
+    height: 40px;
+    line-height: 40px;
+}
+#site_header .logo-container{
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+#site_header .logo-container span{
+  color: #427ad8;
+  font-size: 17px;
+}
+.white-bg{background: #fff;}
+#site_banner {
+    padding: 120px 0;
+    position: relative;
+    max-height: 400px;
+    margin-bottom: 70px;
+}
+#site_banner .container {
+    position: relative;
+    z-index: 1;
+}
+#site_banner h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 36px;
+}
+#site_banner::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+}
+#site_banner .input-container, .urls-container{max-width:600px; width:60%; margin:20px auto;}
+.msg-container{position: fixed; z-index: 1000; top:0; background: rgba(0,0,0,.85); width: 100%; height: 50px; line-height: 50px; text-align: center; display: none; color: #fff;}
+.msg-container .msg{position: relative;}
+.msg-container .msg a.btn-close{position: absolute; right: 20px; top:0; cursor: pointer;}
+#most_accessed_board h3{ font-size: 27px; }
+.urls-container .row{ padding: 5px 0; border-bottom: 1px solid #eee; font-size: 13.5px; }
+@media (max-width: 767px) {
+  #site_banner .input-container{ width: 90%; }
+  #site_banner h1 { font-size: 30px; }
+  #most_accessed_board h3{ font-size: 24px; }
+}
